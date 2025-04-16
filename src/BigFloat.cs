@@ -279,7 +279,7 @@ class BigFloat : IComparable, IComparable<BigFloat>, IEquatable<BigFloat>
     }
     public double Log(double baseValue)
     {
-        return BigInteger.Log(numerator, baseValue) - BigInteger.Log(numerator, baseValue);
+        return BigInteger.Log(numerator, baseValue) - BigInteger.Log(denominator, baseValue);
     }
     public override string ToString()
     {
