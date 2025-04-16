@@ -558,7 +558,7 @@ class BigFloat : IComparable, IComparable<BigFloat>, IEquatable<BigFloat>
     }
     public static BigFloat operator +(BigFloat value)
     {
-        return (new BigFloat(value)).Abs();
+        return value;
     }
     public static BigFloat operator ++(BigFloat value)
     {
